@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"  href="contactus.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="preconnect" href="hhtps://fonts.gastatic.com">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <title>AIMES</title>
+</head>
+<body>
+  <div id="loading">
+    <div class="loader"></div>
+  </div>
+    <header>
+        <div class="navbar">
+    <div class="logo"><a href="index.html">AIMES</a></div>
+    <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+       
+        <li><a href="service.html">Services</a></li>
+    </ul>
+    <a href="contactus.html" class="action-btn">Contact Us</a>
+    <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+
+
+    </div>
+</div>
+<div class="dropdown_menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="aboutus.html">About Us</a></li>
+    
+    <li><a href="service.html">Services</a></li>
+    <li> <a href="contactus.html" class="action-btn">Contact Us</a></li>
+</div>
+</header>
+    <section class="contact" data-aos="fade-right" data-aos-duration ="1000" data-aos-delay="100">
+      <div class="con-container">
+        <h2 data-aos="fade-right" data-aos-duration ="1000" data-aos-delay="100">Want To Hire People</h2>
+        <div class="contact-wrapper">
+          <div class="contact-form">
+            <h3 data-aos="fade-right" data-aos-duration ="1000" data-aos-delay="100">Send Us a Message</h3>
+            <form action="https://api.web3forms.com/submit" method="POST" >
+              <div class="form-group">
+                <input type="hidden" name="access_key" value="d7f97be0-1325-4af3-b148-51033c8084df" >
+                <input type="text" name="name" placeholder="Your Name" required data-aos="fade-right" data-aos-duration ="1000" data-aos-delay="100"><br></br>
+                <input type="email" name="email" placeholder=" Your Email"required data-aos="fade-right" data-aos-duration ="1000" data-aos-delay="100">
+              </div>
+            
+              <div class="form-group">
+                <textarea name="Message" placeholder="Message Us"  required data-aos="fade-right" data-aos-duration ="1000" data-aos-delay="100"></textarea>
+              </div>
+              <button type="submit" class="btn-2">Send</button>
+              <a href="home.html" class="my-button">Go Back</a>
+            </form>
+          </div>
+          <div class="contact-info">
+            <h3 data-aos="fade-right" data-aos-duration ="1000" data-aos-delay="100"> Get In Touch</h3>
+            <p data-aos="fade-right" data-aos-duration ="1000" data-aos-delay="100"><i class="fa fa-phone" data-aos="fade-right" data-aos-duration ="1000" data-aos-delay="100"></i>+966 50 635 7302 </p>
+            <p data-aos="fade-right" data-aos-duration ="1000" data-aos-delay="100"><i class="fa fa-phone" data-aos="fade-right" data-aos-duration ="1000" data-aos-delay="100"></i> 03209900027</p>
+            <p data-aos="fade-right" data-aos-duration ="1000" data-aos-delay="100"><i class="fa fa-envelope" data-aos="fade-right" data-aos-duration ="1000" data-aos-delay="100"></i >fatimashimza@gmail.com</p>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    </body>
+</html>
+</script>
+       <!-- FOOTER =-->
+       <footer  class="footer" data-aos="fade-right" data-aos-duration ="1000" data-aos-delay="100">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>company</h4>
+              <ul>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="service.html">Our services</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>get help</h4>
+              <ul>
+                <li><a href="contactus.html">contact Us</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-col">
+              <p>&copy; 2024 AIMES. <br> All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+    </footer>
+  <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function(){
+        dropDownMenu.classList.toggle('open')
+        const isOpen =dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+    </script>
+       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+       <script>
+         AOS.init();
+       </script>
+        <script>
+          window.onload = function() {
+            document.getElementById('loading').style.display = 'none';
+          }
+        </script>
+    

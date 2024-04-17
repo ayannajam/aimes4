@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:  sans-serif;
+  font-family: 'poppins' ,sans-serif;
+}
+
+.top-container{
+    background-color: lightgray;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.top-wrapper{
+    padding: 5% 8%;
+    width: 100%;
+    min-height: 100vh;
+    background-color:lightgray;
+  }
+
+.top-section{
+    float: left;
+    width: 55%;
+    margin-top: 7%;
+}
+.img-section{
+    float: right;
+    width: 40%;
+    margin-top: 5%;
+}
+.img-section img{
+    width: 100%;
+    height: auto;
+}
+.top-section .title{
+    text-transform: uppercase;
+    font-size: 28px;
+    color: black ;
+}
+
+.top-section .top-content h3{
+    margin-top: 20px;
+    color: #5d5d5d;
+    font-size: 19px;
+}
+.top-section .top-content p{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #3d3d3d;
+    
+
+}
+.top-section .top-content .button {
+    margin-top: 40px;
+}
+.my-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease 0s;
+    margin-top: 5%;
+    
+  }
+  
+  .my-button:hover {
+    background-color: rgb(192, 21, 21);
+    color: black;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  }
+.top-section .top-content .button a:hover{
+    background-color: #a52a2a;
+    color: #fff;
+}
+.top-section .social{
+    margin:  40px 40px ;
+}
+.top-section .social i{
+    color: #a52a2a;
+    font-size: 30px;
+    padding: 0px 10px;
+}
+.top-section .social i:hover{
+    color: #3d3d3d;
+}
+@media screen and ( max-width: 768px){
+    .top-container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+        min-height: 100vh;
+        width: 100%;
+    }
+    .top-section{
+        float: left;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .img-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .img-section img{
+        width: 100%;
+        display: block;
+        margin: auto;
+        height: auto;
+    }
+    .top-section .title{
+        text-align: center;
+        font-size: 19px;
+    }
+    .top-section .top-content .button{
+        text-align: center;
+        
+    }
+    .top-section .top-content .button a{
+        padding: 9px 30px;
+        font-size: 15px;
+    }
+    .top-section .social{
+        text-align: center;
+    }
+    .top-section .top-content p{
+        text-align: center;
+        margin-top: 20%;
+    }
+    .top-section .top-content h3{
+        text-align: center;
+    }
+}

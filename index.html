@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="contactus.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="hhtps://fonts.gastatic.com">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>AIMES</title>
+</head>
+<body>
+  <header>
+  <div id="loading">
+    <div class="loader"></div>
+  </div>
+  <main>
+    <div  class="navbar" >
+      <div class="logo"><a href="index.html">AIMES</a></div>
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About us</a></li> 
+        <li><a href="service.html">Services</a></li>
+      </ul>
+      <a href="contactus.html" class="action-btn">Contact Us</a>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <div  class="dropdown_menu" >
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="service.html">Our Services</a></li>
+      <li> <a href="contactus.html" class="action-btn">Contact Us</a></li>
+    </div>
+  </header>
+    <section class="hero">
+      <video autoplay loop muted plays-inline class="back-video" data-aos="fade-right" data-aos-duration ="1000" data-aos-delay="100" >
+        <source src="video.mp4" type="video/mp4">
+      </video>
+      <h1 data-aos="fade-right" data-aos-duration ="1000" data-aos-delay="100">WELCOME</h1>
+      <p data-aos="fade-right" data-aos-duration ="1000" data-aos-delay="100">"Experience seamless convenience and unparalleled expertise with our premium service, <br>
+        dedicated to exceeding your expectations and delivering solutions tailored to your unique needs."</br>
+      
+    </section>
+  </main>
+  
+  <!-- FOOTER =-->
+  <footer  class="footer" data-aos="fade-right" data-aos-duration ="1000" data-aos-delay="100">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4 >company</h4>
+          <ul>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="service.html">Our services</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="contactus.html">contact Us</a></li>
+          </ul>
+        </div>
+        
+      
+        <div class="footer-col">
+          <p>&copy; 2024 AIMES. <br> All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+</footer>
+  <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleBtnIcon.classList = isOpen
+       ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+  </script>
+
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
+    <script>
+      window.onload = function() {
+        document.getElementById('loading').style.display = 'none';
+      }
+    </script>
+</body>
+
+</html>
